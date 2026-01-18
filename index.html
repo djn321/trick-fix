@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trick Fix - Stunt Scooter & Skateboard Repairs in Sussex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --yellow: #FFE135;
+            --magenta: #FF2D95;
+            --teal: #00D4AA;
+            --dark: #1A1A2E;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark);
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--magenta), var(--teal));
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 5rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--white);
+            text-shadow: 4px 4px 0 var(--dark);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: var(--yellow);
+            font-weight: 600;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            color: var(--yellow);
+        }
+
+        /* About section */
+        .about {
+            background-color: var(--teal);
+            color: var(--dark);
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: var(--dark);
+        }
+
+        .about p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            font-weight: 600;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: linear-gradient(145deg, var(--magenta), #cc2477);
+            padding: 30px;
+            border-radius: 12px;
+            border: 3px solid var(--yellow);
+        }
+
+        .service-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--yellow);
+        }
+
+        .service-card ul {
+            list-style: none;
+        }
+
+        .service-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .service-card li:last-child {
+            border-bottom: none;
+        }
+
+        /* Why us */
+        .why-us {
+            background-color: var(--yellow);
+            color: var(--dark);
+            max-width: 100%;
+        }
+
+        .why-us h2 {
+            color: var(--dark);
+            text-align: center;
+        }
+
+        .reasons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .reason {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .reason-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .reason h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--magenta);
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            background: linear-gradient(135deg, var(--dark), #2a2a4e);
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .contact-item h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem;
+            color: var(--teal);
+            margin-bottom: 10px;
+        }
+
+        .contact-item p {
+            color: var(--white);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--dark);
+            border-top: 3px solid var(--magenta);
+        }
+
+        footer p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Logo icon */
+        .logo-icon {
+            width: 280px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 3rem;
+            }
+
+            .logo-icon {
+                width: 200px;
+                height: auto;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 40px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+<!-- Logo image -->
+        <img src="logo.jpeg" alt="Trick Fix - Scooter rider doing a trick" class="logo-icon">
+        <p class="tagline">Stunt Scooter & Skateboard Repairs in Sussex</p>
+    </header>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Trick Fix is run by two 12-year-old riders who know stunt scooters and skateboards inside out. We ride them, we break them, and we fix them.</p>
+    </section>
+
+    <section class="services">
+        <h2>What We Do</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Repairs</h3>
+                <ul>
+                    <li>Bearings and wheels</li>
+                    <li>Grip tape replacement</li>
+                    <li>Deck repairs</li>
+                    <li>Brake adjustments</li>
+                    <li>General maintenance</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Custom Builds</h3>
+                <ul>
+                    <li>Build your dream setup from parts</li>
+                    <li>Upgrades to your current ride</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Tuning & Setup</h3>
+                <ul>
+                    <li>Bar and deck alignment</li>
+                    <li>Compression tuning</li>
+                    <li>Setup for your riding style</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <h2>Why Trick Fix?</h2>
+        <div class="reasons">
+            <div class="reason">
+                <div class="reason-icon">🛴</div>
+                <h3>We Get It</h3>
+                <p>We're riders ourselves, so we understand what you need.</p>
+            </div>
+            <div class="reason">
+                <div class="reason-icon">📍</div>
+                <h3>Local</h3>
+                <p>Based in Hurstpierpoint, serving Sussex.</p>
+            </div>
+            <div class="reason">
+                <div class="reason-icon">💰</div>
+                <h3>Fair Prices</h3>
+                <p>We know what it's like to save up for parts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Address</h3>
+                <p>[Your address]<br>Hurstpierpoint<br>Sussex</p>
+            </div>
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <p>[Phone number]</p>
+            </div>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>[Email address]</p>
+            </div>
+            <div class="contact-item">
+                <h3>Opening Hours</h3>
+                <p>[Days and times]</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Trick Fix. All rights reserved.</p>
+    </footer>
+</body>
+</html>

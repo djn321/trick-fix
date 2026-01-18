@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trick Fix - Logo Options</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --yellow: #FFE135;
+            --magenta: #FF2D95;
+            --teal: #00D4AA;
+            --dark: #1A1A2E;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark);
+            color: var(--white);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--yellow);
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .option {
+            background: linear-gradient(135deg, var(--magenta), var(--teal));
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .option h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--white);
+        }
+
+        .option p {
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .logo-container {
+            background: var(--dark);
+            border-radius: 12px;
+            padding: 30px;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-container svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .placeholder {
+            border: 3px dashed var(--yellow);
+            color: var(--yellow);
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Logo Options</h1>
+
+    <div class="options">
+        <!-- Option 1: Improved Detailed SVG -->
+        <div class="option">
+            <h2>Option 1: Detailed Silhouette</h2>
+            <p>More anatomical detail and better proportions</p>
+            <div class="logo-container">
+                <svg viewBox="0 0 240 180" width="220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Rider with more anatomical detail -->
+                    <g fill="#FFFFFF">
+                        <!-- Head with helmet shape -->
+                        <ellipse cx="100" cy="28" rx="14" ry="16"/>
+                        <!-- Helmet visor suggestion -->
+                        <path d="M88 25 Q100 22 112 25" stroke="#1A1A2E" stroke-width="2" fill="none"/>
+
+                        <!-- Neck -->
+                        <rect x="96" y="42" width="8" height="8" rx="2"/>
+
+                        <!-- Torso - more shaped -->
+                        <path d="M100 50 Q85 55 82 70 L82 85 Q85 90 100 90 Q115 90 118 85 L118 70 Q115 55 100 50"/>
+
+                        <!-- Shoulders -->
+                        <ellipse cx="82" cy="58" rx="6" ry="5"/>
+                        <ellipse cx="118" cy="58" rx="6" ry="5"/>
+
+                        <!-- Left arm - reaching for bars -->
+                        <path d="M76 58 Q65 55 55 58 Q45 62 38 72" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Left hand/grip -->
+                        <circle cx="38" cy="72" r="6"/>
+
+                        <!-- Right arm - bent back -->
+                        <path d="M124 58 Q135 52 142 58 Q150 68 145 80" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Right hand -->
+                        <circle cx="145" cy="80" r="5"/>
+
+                        <!-- Hips -->
+                        <ellipse cx="100" cy="95" rx="15" ry="8"/>
+
+                        <!-- Left leg - extended back -->
+                        <path d="M90 95 Q75 105 65 120 Q58 135 50 150" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Left foot -->
+                        <ellipse cx="48" cy="153" rx="8" ry="5" transform="rotate(-20 48 153)"/>
+
+                        <!-- Right leg - tucked -->
+                        <path d="M110 95 Q125 100 135 115 Q140 130 138 140" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Right foot -->
+                        <ellipse cx="138" cy="144" rx="8" ry="5" transform="rotate(15 138 144)"/>
+                    </g>
+
+                    <!-- Scooter mid-tailwhip -->
+                    <g transform="rotate(-35 100 120)">
+                        <!-- Fork/headtube -->
+                        <path d="M42 75 L42 95" stroke="#FFE135" stroke-width="5" stroke-linecap="round"/>
+
+                        <!-- Handlebars - T-bar style -->
+                        <rect x="28" y="70" width="28" height="5" rx="2" fill="#FFE135"/>
+                        <!-- Bar ends -->
+                        <circle cx="28" cy="72" r="4" fill="#00D4AA"/>
+                        <circle cx="56" cy="72" r="4" fill="#00D4AA"/>
+
+                        <!-- Clamp -->
+                        <rect x="38" y="95" width="8" height="6" rx="1" fill="#00D4AA"/>
+
+                        <!-- Deck - angled, with text -->
+                        <rect x="30" y="101" width="90" height="12" rx="2" fill="#FFE135"/>
+                        <!-- Grip tape texture -->
+                        <rect x="32" y="102" width="86" height="10" rx="1" fill="#1A1A2E" opacity="0.3"/>
+                        <!-- Text on deck -->
+                        <text x="75" y="111" font-family="'Bebas Neue', Arial Black, sans-serif" font-size="9" fill="#1A1A2E" text-anchor="middle" font-weight="bold" letter-spacing="1">TRICK FIX</text>
+
+                        <!-- Front wheel -->
+                        <circle cx="38" cy="122" r="12" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+                        <circle cx="38" cy="122" r="5" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <circle cx="38" cy="122" r="2" fill="#FF2D95"/>
+
+                        <!-- Back wheel -->
+                        <circle cx="112" cy="122" r="12" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+                        <circle cx="112" cy="122" r="5" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <circle cx="112" cy="122" r="2" fill="#00D4AA"/>
+
+                        <!-- Brake -->
+                        <path d="M105 113 Q115 108 120 113" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    </g>
+
+                    <!-- Motion lines -->
+                    <g stroke="#FFE135" stroke-linecap="round">
+                        <path d="M180 60 L210 55" stroke-width="3" opacity="0.8"/>
+                        <path d="M185 80 L220 75" stroke-width="2.5" opacity="0.6"/>
+                        <path d="M182 100 L215 98" stroke-width="2" opacity="0.4"/>
+                        <path d="M175 120 L200 120" stroke-width="1.5" opacity="0.3"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Option 2: AI Generated placeholder -->
+        <div class="option">
+            <h2>Option 2: AI Generated</h2>
+            <p>Realistic illustration - I'll help you generate this</p>
+            <div class="logo-container">
+                <div class="placeholder">
+                    AI IMAGE<br>
+                    (See Canva/DALL-E)
+                </div>
+            </div>
+        </div>
+
+        <!-- Option 3: Clean Minimal -->
+        <div class="option">
+            <h2>Option 3: Clean Minimal</h2>
+            <p>Simple, bold silhouette - professional and versatile</p>
+            <div class="logo-container">
+                <svg viewBox="0 0 200 150" width="180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Clean single-path rider silhouette -->
+                    <g fill="#FFFFFF">
+                        <!-- Simplified rider shape - one fluid form -->
+                        <path d="
+                            M95 20
+                            C105 20 112 28 112 38
+                            C112 48 105 55 95 55
+                            C85 55 78 48 78 38
+                            C78 28 85 20 95 20
+                            M90 55
+                            L85 85
+                            L75 85
+                            L60 70
+                            L50 75
+                            L55 80
+                            L75 95
+                            L70 130
+                            L55 145
+                            L62 148
+                            L82 130
+                            L88 95
+                            L102 95
+                            L108 130
+                            L125 148
+                            L132 145
+                            L115 125
+                            L105 95
+                            L115 85
+                            L130 80
+                            L135 70
+                            L120 75
+                            L105 85
+                            L100 55
+                        " fill="#FFFFFF"/>
+                    </g>
+
+                    <!-- Minimal scooter -->
+                    <g transform="rotate(-30 120 100)">
+                        <!-- Single clean bar -->
+                        <rect x="55" y="68" width="4" height="28" fill="#FFE135"/>
+                        <rect x="45" y="65" width="24" height="4" rx="2" fill="#FFE135"/>
+
+                        <!-- Clean deck with text -->
+                        <rect x="48" y="96" width="70" height="10" rx="2" fill="#FFE135"/>
+                        <text x="83" y="104" font-family="'Bebas Neue', Arial Black, sans-serif" font-size="7" fill="#1A1A2E" text-anchor="middle" font-weight="bold">TRICK FIX</text>
+
+                        <!-- Simple wheels -->
+                        <circle cx="55" cy="112" r="8" fill="#FFFFFF"/>
+                        <circle cx="55" cy="112" r="3" fill="#FF2D95"/>
+                        <circle cx="112" cy="112" r="8" fill="#FFFFFF"/>
+                        <circle cx="112" cy="112" r="3" fill="#00D4AA"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
