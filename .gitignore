@@ -16,6 +16,9 @@ Thumbs.db
 *.sln
 *.sw?
 
+# Local documentation
+*.local.md
+
 # Node (if added later)
 node_modules/
 dist/
